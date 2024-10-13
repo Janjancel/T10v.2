@@ -15,12 +15,12 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F0F8FF;
+  background: #f1f0ec;
   padding: 0 20px;
 }
 
 main.dark{
-  background: #1a2634;
+  background: #1e2c3c;
 }
 
 
@@ -29,7 +29,7 @@ main .container{
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #FAF9F6;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   position: relative;
@@ -71,7 +71,7 @@ main.dark .link-section a{
   border-color: rgb(66, 65, 65);
   border-radius: 10px;
 }
-main.dark #ig:hover,
+/* main.dark #ig:hover,
 main.dark #fb:hover, 
 main.dark #tiktok:hover, 
 main.dark #x:hover, 
@@ -79,15 +79,14 @@ main.dark #github:hover,
 main.dark #email:hover{
   background:linear-gradient(#403d3d, #706767);
 
-}
+} */
 
 main.dark .container{
   color: #fff;
   background-color: #1a2634;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: solid 2px;
-  border-color: rgb(125, 134, 134);
-  border-radius: 10px;
+  border: 1px solid #5c5959;
+  border-radius: .375em;
   
 }
 main.dark footer{
@@ -156,16 +155,18 @@ main.dark #email:hover{
   margin: 27px auto;
 }
 .container{
-  border-color: #558676;
+  /* border-color: #558676;
   border: solid 2px;
-  border-radius: 10px;
+  border-radius: 10px; */
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
 }
 .link-section a {
   position: relative;
   background-color: transparent;
   color: var(--accentColor);
-  border: solid 2px;
-  border-radius: 10px;
+  /* border: solid 2px; */
+  /* border-radius: 10px; */
   font-size: 1rem;
   text-align: center;
   display: block;
@@ -174,10 +175,10 @@ main.dark #email:hover{
   margin-bottom: 20px;
   padding: 10px;
   text-decoration: none;
-  background:linear-gradient(#fcfcfc, #d2d0d0);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  /* background:linear-gradient(#fcfcfc, #d2d0d0); */
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); */
   font-weight: 600;
-  border-color: #6c6c6c;
+  /* border-color: #6c6c6c; */
 }
 
 .icon{
@@ -268,12 +269,12 @@ h1 span:last-child {
 
 #ig:hover ,#fb:hover, #tiktok:hover, #x:hover, #github:hover, #email:hover{
   transform: translateY(-5px);
-  background:linear-gradient(#ffffff, #988b8b);
+  /* background:linear-gradient(#ffffff, #988b8b); */
 
 }
 
 
-.link {
+/* .link {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -338,7 +339,54 @@ h1 span:last-child {
   left: 0;
   top: 0;
   border-radius: 10px;
+} */
+
+
+
+.link{
+  align-items: center;
+  appearance: none;
+  background-color: #e1d8d8;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  /* font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
 }
+
+.link:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.link:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+.link:hover {
+  border-color: #b5b5b5;
+}
+
+.link:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
 
 
 main.dark .link {
@@ -402,7 +450,7 @@ main.dark .link:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #252a34;
+  background: #1a2634;
   left: 0;
   top: 0;
   border-radius: 10px;
